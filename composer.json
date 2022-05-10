@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Williamug\\MoneyFormatter\\": "src"
+        
         }
     },
     "autoload-dev": {
@@ -52,7 +52,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Williamug\\MoneyFormatter\\MoneyFormatterServiceProvider"
+                "Williamug\\MoneyFormatter\\BladeServiceProvider"
             ],
             "aliases": {
                 "MoneyFormatter": "Williamug\\MoneyFormatter\\Facades\\MoneyFormatter"
