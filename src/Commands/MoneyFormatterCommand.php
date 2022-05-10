@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Williamug\MoneyFormatter\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MoneyFormatterCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'money-formatter';
 
     public $description = 'My command';
 

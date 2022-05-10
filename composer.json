@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "williamug/money-formatter",
+    "description": "This package helps you format currancy by adding commas",
     "keywords": [
-        ":vendor_name",
+        "Williamug",
         "laravel",
-        ":package_slug"
+        "money-formatter"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/williamug/money-formatter",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "williamug",
+            "email": "asabawilliamdk@yahoo.com",
             "role": "Developer"
         }
     ],
@@ -22,25 +22,21 @@
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
-        "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^7.0",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
         "spatie/laravel-ray": "^1.26"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Williamug\\MoneyFormatter\\": "src",
+            "Williamug\\MoneyFormatter\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Williamug\\MoneyFormatter\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,15 +45,18 @@
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Williamug\\MoneyFormatter\\MoneyFormatterServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "MoneyFormatter": "Williamug\\MoneyFormatter\\Facades\\MoneyFormatter"
             }
         }
     },
