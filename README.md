@@ -17,7 +17,7 @@ composer require williamug/money-formatter
 
 ## Usage
 
-Use @money directive in your bladd templates.
+Use @money directive in your blade templates. Replace `10000` with any value
 
 ```php
 @money(10000)
