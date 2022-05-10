@@ -1,4 +1,4 @@
-# This package helps you format currancy by adding commas
+# A Simple way to format digits into currency format.
 
 <!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/stats#major/all)
 [![test](https://github.com/Williamug/money-formatter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Williamug/money-formatter/actions/workflows/test.yml)
@@ -17,9 +17,14 @@ composer require williamug/money-formatter
 ## Usage
 
 Use @money directive in your blade templates. Replace `10000` with any value
+Example
 
 ```php
 @money(10000)
+//10,000.00
+
+@money(123000)
+// 123,000.00
 ```
 
 ## Testing
