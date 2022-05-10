@@ -52,10 +52,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Williamug\\BladeServiceProvider"
+                "Williamug\\MoneyFormatter\\BladeServiceProvider"
             ],
             "aliases": {
-                "MoneyFormatter": "Williamug\\MoneyFormatter\\Facades\\MoneyFormatter"
+                
             }
         }
     },
