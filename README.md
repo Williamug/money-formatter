@@ -15,12 +15,6 @@ You can install the package via composer:
 composer require williamug/money-formatter
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="money-formatter-config"
-```
-
 ## Usage
 
 Use @money directive in your bladd templates.
