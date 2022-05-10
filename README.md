@@ -1,8 +1,8 @@
 # This package helps you format currancy by adding commas
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/stats#major/all)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/williamug/money-formatter/run-tests?label=tests)](https://github.com/williamug/money-formatter/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/)
+<!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/stats#major/all)
+[![test](https://github.com/Williamug/money-formatter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Williamug/money-formatter/actions/workflows/test.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/) -->
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
