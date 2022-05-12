@@ -1,10 +1,9 @@
-# A Simple way to format digits into currency format.
+# Money Formmatter
 
-<!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/stats#major/all)
-[![test](https://github.com/Williamug/money-formatter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Williamug/money-formatter/actions/workflows/test.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/) -->
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/stats#major/all)
+[![Total Downloads](https://img.shields.io/packagist/dt/williamug/money-formatter.svg?style=flat-square)](https://packagist.org/packages/williamug/money-formatter/)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+A Simple way to format digits into currency/ money format.
 
 ## Installation
 
@@ -16,13 +15,13 @@ composer require williamug/money-formatter
 
 ## Usage
 
-Use @money directive in your blade templates. Replace `10000` with any value.
+Use `@money` directive in your blade templates. Replace `10000` with any value or variable.
 
 Example
 
 ```php
 @money(10000)
-//10,000.00
+// 10,000.00
 
 @money(123000)
 // 123,000.00
@@ -37,10 +36,6 @@ composer test
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](https://github.com/spatie/.github/blob/main/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
