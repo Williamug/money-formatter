@@ -7,6 +7,8 @@ A Simple way to format digits into currency/ money format.
 
 ## Installation
 
+###### Note: before using the package, make sure that you have intl extension installed. Click [here](https://www.php.net/manual/en/intl.installation.php) to follow the steps
+
 You can install the package via composer:
 
 ```bash
