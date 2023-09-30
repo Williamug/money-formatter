@@ -24,7 +24,9 @@ class BladeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // format money
         Blade::directive('money', fn ($money) => "<?php echo number_format($money, 2); ?>");
+
         Blade::directive('numbertowords', fn ($amount) => "<?php echo (new NumberFormatter('en', NumberFormatter::SPELLOUT))->format($amount); ?>");
     }
 }
