@@ -21,12 +21,23 @@ Use `@money` directive in your blade templates. Replace `10000` with any value o
 
 Example
 
-```php
+```blade
 @money(10000)
 // 10,000.00
 
 @money(123000)
 // 123,000.00
+```
+
+If you want to convert an integer or amount of money into words. Use `@numbertowords` directive in your blade files.
+
+Example:
+```blade
+@numbertowords(10000)
+// ten thousand
+
+@numbertowords(123000)
+// one hundred twenty-three thousand
 ```
 
 ## Testing
