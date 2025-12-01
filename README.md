@@ -36,8 +36,8 @@
 - Parse formatted strings back to numbers
 - Chainable methods for complex formatting
 
-**Wide Compatibility**
-- Laravel 10, 11 & 12
+🌍 **Wide Compatibility**
+- Laravel 10 & 11 (stable)
 - PHP 8.2, 8.3 & 8.4
 - 63 tests with 108 assertions
 

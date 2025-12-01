@@ -79,7 +79,7 @@ None - This is a fully backward-compatible major release. All existing functiona
 - Support for multiple currencies and locales
 - Configurable decimal places, separators, and currency symbols
 - Parse formatted money strings back to float
-- Laravel 10, 11 & 12 support
+- Laravel 10 & 11 support (stable and tested)
 - Comprehensive test suite with 20+ tests
 - GitHub Actions CI/CD workflow
 - Extensive documentation and examples

@@ -90,7 +90,7 @@ We just released v3.0 with 15+ formatters for Laravel:
 ✅ And more...
 
 All with Blade directives, helpers, and Facade support.
-63 tests, Laravel 10-12, PHP 8.2-8.4
+63 tests, Laravel 10-11, PHP 8.2-8.4
 
 GitHub: williamug/money-formatter
 Packagist: williamug/money-formatter
