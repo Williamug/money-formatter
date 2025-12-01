@@ -36,15 +36,11 @@
 - Parse formatted strings back to numbers
 - Chainable methods for complex formatting
 
-🌍 **Wide Compatibility**
-- Laravel 10 & 11 (stable)
-- PHP 8.2, 8.3 & 8.4
-- 63 tests with 108 assertions
 
 ## Requirements
 
-- PHP 8.1 or higher
-- Laravel 9.0 or higher
+- PHP 8.2 or higher
+- Laravel 10.0 or higher
 - PHP `intl` extension ([installation guide](https://www.php.net/manual/en/intl.installation.php))
 
 ## Installation
