@@ -4,106 +4,105 @@ namespace Williamug\MoneyFormatter;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use NumberFormatter;
 
 class BladeServiceProvider extends ServiceProvider
 {
-  /**
-   * Register services.
-   */
-  public function register(): void
-  {
-    // Merge config
-    $this->mergeConfigFrom(
-      __DIR__ . '/../config/money-formatter.php',
-      'money-formatter'
-    );
+    /**
+     * Register services.
+     */
+    public function register(): void
+    {
+        // Merge config
+        $this->mergeConfigFrom(
+            __DIR__ . '/../config/money-formatter.php',
+            'money-formatter'
+        );
 
-    // Register the main class
-    $this->app->singleton('money-formatter', function ($app) {
-      return new MoneyFormatter();
-    });
+        // Register the main class
+        $this->app->singleton('money-formatter', function ($app) {
+            return new MoneyFormatter();
+        });
 
-    $this->app->alias('money-formatter', MoneyFormatter::class);
-  }
-
-  /**
-   * Bootstrap services.
-   */
-  public function boot(): void
-  {
-    // Publish config
-    $this->publishes([
-      __DIR__ . '/../config/money-formatter.php' => config_path('money-formatter.php'),
-    ], 'money-formatter-config');
-
-    // Load helper functions
-    if (file_exists($file = __DIR__ . '/helpers.php')) {
-      require $file;
+        $this->app->alias('money-formatter', MoneyFormatter::class);
     }
 
-    // Register Blade directives
-    $this->registerBladeDirectives();
-  }
+    /**
+     * Bootstrap services.
+     */
+    public function boot(): void
+    {
+        // Publish config
+        $this->publishes([
+          __DIR__ . '/../config/money-formatter.php' => config_path('money-formatter.php'),
+        ], 'money-formatter-config');
 
-  /**
-   * Register Blade directives
-   */
-  protected function registerBladeDirectives(): void
-  {
-    // @money directive - format money with config defaults
-    Blade::directive('money', function ($money) {
-      return "<?php echo app('money-formatter')->format($money); ?>";
-    });
+        // Load helper functions
+        if (file_exists($file = __DIR__ . '/helpers.php')) {
+            require $file;
+        }
 
-    // @moneyWithSymbol directive - format money with currency symbol
-    Blade::directive('moneyWithSymbol', function ($expression) {
-      return "<?php echo app('money-formatter')->formatWithSymbol($expression); ?>";
-    });
+        // Register Blade directives
+        $this->registerBladeDirectives();
+    }
 
-    // @currency directive - format as currency with locale
-    Blade::directive('currency', function ($expression) {
-      return "<?php echo app('money-formatter')->formatCurrency($expression); ?>";
-    });
+    /**
+     * Register Blade directives
+     */
+    protected function registerBladeDirectives(): void
+    {
+        // @money directive - format money with config defaults
+        Blade::directive('money', function ($money) {
+            return "<?php echo app('money-formatter')->format($money); ?>";
+        });
 
-    // @numbertowords directive - convert number to words
-    Blade::directive('numbertowords', function ($amount) {
-      return "<?php echo app('money-formatter')->toWords($amount); ?>";
-    });
+        // @moneyWithSymbol directive - format money with currency symbol
+        Blade::directive('moneyWithSymbol', function ($expression) {
+            return "<?php echo app('money-formatter')->formatWithSymbol($expression); ?>";
+        });
 
-    // @percentage directive - format as percentage
-    Blade::directive('percentage', function ($expression) {
-      return "<?php echo app('money-formatter')->percentage($expression); ?>";
-    });
+        // @currency directive - format as currency with locale
+        Blade::directive('currency', function ($expression) {
+            return "<?php echo app('money-formatter')->formatCurrency($expression); ?>";
+        });
 
-    // @filesize directive - format bytes to human readable
-    Blade::directive('filesize', function ($bytes) {
-      return "<?php echo app('money-formatter')->fileSize($bytes); ?>";
-    });
+        // @numbertowords directive - convert number to words
+        Blade::directive('numbertowords', function ($amount) {
+            return "<?php echo app('money-formatter')->toWords($amount); ?>";
+        });
 
-    // @abbreviate directive - abbreviate large numbers
-    Blade::directive('abbreviate', function ($number) {
-      return "<?php echo app('money-formatter')->abbreviate($number); ?>";
-    });
+        // @percentage directive - format as percentage
+        Blade::directive('percentage', function ($expression) {
+            return "<?php echo app('money-formatter')->percentage($expression); ?>";
+        });
 
-    // @ordinal directive - format ordinal numbers
-    Blade::directive('ordinal', function ($number) {
-      return "<?php echo app('money-formatter')->ordinal($number); ?>";
-    });
+        // @filesize directive - format bytes to human readable
+        Blade::directive('filesize', function ($bytes) {
+            return "<?php echo app('money-formatter')->fileSize($bytes); ?>";
+        });
 
-    // @phone directive - format phone number
-    Blade::directive('phone', function ($expression) {
-      return "<?php echo app('money-formatter')->phone($expression); ?>";
-    });
+        // @abbreviate directive - abbreviate large numbers
+        Blade::directive('abbreviate', function ($number) {
+            return "<?php echo app('money-formatter')->abbreviate($number); ?>";
+        });
 
-    // @creditcard directive - format/mask credit card
-    Blade::directive('creditcard', function ($expression) {
-      return "<?php echo app('money-formatter')->creditCard($expression); ?>";
-    });
+        // @ordinal directive - format ordinal numbers
+        Blade::directive('ordinal', function ($number) {
+            return "<?php echo app('money-formatter')->ordinal($number); ?>";
+        });
 
-    // @duration directive - format seconds to duration
-    Blade::directive('duration', function ($seconds) {
-      return "<?php echo app('money-formatter')->duration($seconds); ?>";
-    });
-  }
+        // @phone directive - format phone number
+        Blade::directive('phone', function ($expression) {
+            return "<?php echo app('money-formatter')->phone($expression); ?>";
+        });
+
+        // @creditcard directive - format/mask credit card
+        Blade::directive('creditcard', function ($expression) {
+            return "<?php echo app('money-formatter')->creditCard($expression); ?>";
+        });
+
+        // @duration directive - format seconds to duration
+        Blade::directive('duration', function ($seconds) {
+            return "<?php echo app('money-formatter')->duration($seconds); ?>";
+        });
+    }
 }

@@ -29,8 +29,8 @@ use Illuminate\Support\Facades\Facade;
  */
 class Money extends Facade
 {
-  protected static function getFacadeAccessor(): string
-  {
-    return 'money-formatter';
-  }
+    protected static function getFacadeAccessor(): string
+    {
+        return 'money-formatter';
+    }
 }
