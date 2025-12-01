@@ -8,35 +8,35 @@
 
 ## Features
 
-✨ **15+ Powerful Formatters**
-- 💰 Money & Currency formatting
-- 📊 Percentage formatting
-- 📁 File size (bytes to KB/MB/GB/TB)
-- 🔢 Number abbreviation (1K, 1M, 1B, 1T)
-- 🥇 Ordinal numbers (1st, 2nd, 3rd)
-- 📞 Phone number formatting (international, national, dots)
-- 💳 Credit card masking (secure)
-- ⏱️ Duration formatting (seconds to human readable)
-- 📐 Metric/SI prefix formatting
-- 🎯 Compact number notation
-- 🧮 Decimal to fraction conversion
-- 🔤 Number to words conversion
+**15+ Powerful Formatters**
+- Money & Currency formatting
+- Percentage formatting
+- File size (bytes to KB/MB/GB/TB)
+- Number abbreviation (1K, 1M, 1B, 1T)
+- Ordinal numbers (1st, 2nd, 3rd)
+- Phone number formatting (international, national, dots)
+- Credit card masking (secure)
+- Duration formatting (seconds to human readable)
+- Metric/SI prefix formatting
+- Compact number notation
+- Decimal to fraction conversion
+- Number to words conversion
 - And more!
 
-🎨 **Multiple Ways to Use**
+**Multiple Ways to Use**
 - Blade directives for templates (`@money`, `@percentage`, `@filesize`, etc.)
 - Helper functions for quick usage (`format_money()`, `format_percentage()`, etc.)
 - Facade for fluent API (`Money::format()`, `Money::percentage()`, etc.)
 - Direct class instantiation for advanced usage
 
-💪 **Professional Features**
+**Professional Features**
 - Configurable decimal places, separators, and currency symbols
 - Support for 8+ currencies (USD, EUR, GBP, UGX, KES, TZS, ZAR, and more)
 - Locale-based formatting
 - Parse formatted strings back to numbers
 - Chainable methods for complex formatting
 
-🌍 **Wide Compatibility**
+**Wide Compatibility**
 - Laravel 10, 11 & 12
 - PHP 8.2, 8.3 & 8.4
 - 63 tests with 108 assertions
