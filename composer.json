@@ -58,6 +58,9 @@
     "test": "vendor/bin/pest",
     "test-coverage": "vendor/bin/pest --coverage"
   },
+  "replace": {
+    "orchestra/canvas": "*"
+  },
   "config": {
     "sort-packages": true,
     "allow-plugins": {
