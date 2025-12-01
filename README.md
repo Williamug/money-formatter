@@ -37,8 +37,8 @@
 - Chainable methods for complex formatting
 
 🌍 **Wide Compatibility**
-- Laravel 9, 10, 11, and 12
-- PHP 8.1, 8.2, and 8.3
+- Laravel 10, 11 & 12
+- PHP 8.2, 8.3 & 8.4
 - 63 tests with 108 assertions
 
 ## Requirements
