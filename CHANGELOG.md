@@ -62,6 +62,8 @@ This major release transforms the package from a simple money formatter into a *
 - Enhanced README with comprehensive feature list
 - Improved package description for better discoverability
 - Added CONTRIBUTING.md and SECURITY.md
+- PHP 8.2, 8.3 & 8.4 support
+- Orchestra Testbench 8, 9 & 10 support
 
 ### Breaking Changes
 None - This is a fully backward-compatible major release. All existing functionality remains unchanged.
@@ -77,7 +79,7 @@ None - This is a fully backward-compatible major release. All existing functiona
 - Support for multiple currencies and locales
 - Configurable decimal places, separators, and currency symbols
 - Parse formatted money strings back to float
-- Laravel 9, 10, 11, and 12 support
+- Laravel 10, 11 & 12 support
 - Comprehensive test suite with 20+ tests
 - GitHub Actions CI/CD workflow
 - Extensive documentation and examples
