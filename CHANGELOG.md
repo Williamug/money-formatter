@@ -2,6 +2,13 @@
 
 All notable changes to `money-formatter` will be documented in this file.
 
+## [Unreleased]
+
+### Changed
+- Extended Laravel support to include Laravel 12.x
+- Updated Orchestra Testbench to support versions 8.x, 9.x, and 10.x
+- Updated Collision dependency to support versions 7.x, 8.x, and 9.x
+
 ## [3.0.0] - 2025-12-01
 
 ### 🚀 MAJOR RELEASE - Complete Formatting Suite

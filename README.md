@@ -40,7 +40,7 @@
 ## Requirements
 
 - PHP 8.2 or higher
-- Laravel 10.0 or higher
+- Laravel 10.x, 11.x, or 12.x
 - PHP `intl` extension ([installation guide](https://www.php.net/manual/en/intl.installation.php))
 
 ## Installation
