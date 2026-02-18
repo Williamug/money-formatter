@@ -30,9 +30,9 @@ class MoneyFormatter
     /**
      * Format a number as money
      */
-    public function format(float|int|string $amount, ?string $currency = null): string
+    public function format(float|int|string|null $amount, ?string $currency = null): string
     {
-        $amount = (float) $amount;
+        $amount = (float) ($amount ?? 0);
         $currency = $currency ?? $this->currency;
 
         $formatted = number_format(
